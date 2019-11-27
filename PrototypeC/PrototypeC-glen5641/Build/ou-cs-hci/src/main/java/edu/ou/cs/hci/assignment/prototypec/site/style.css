@@ -1,0 +1,344 @@
+/*******************************************************************************
+Below CSS displays a liquid layout for any window size using ViewPort Width and
+Height. This allows for use on Firefox Web Browser and Google Chrome Web Browser
+*******************************************************************************/
+
+/******************************************************************************/
+/* Body Styling                                                               */
+/******************************************************************************/
+body {
+  background-color:   #444;
+  color:              black;
+  font-family:        Arial, sans-serif;
+  font-size:          14px;
+  overflow:           hidden;
+}
+
+/******************************************************************************/
+/* Anchor Styling                                                             */
+/******************************************************************************/
+a:link {
+  color:              #bbb;
+  font-weight:        bold;
+  text-decoration:    none;
+} a:visited { color:  #808080;
+} a:hover   { color:  #444;
+}
+
+/******************************************************************************/
+/* Banner Styling                                                             */
+/******************************************************************************/
+.banner {
+  position:           absolute;
+  left:               0;
+  top:                0;
+  background-image:   url("images/movies-desktop.png");
+  background-size:    101% 90%;
+  background-repeat:  no-repeat;
+  border:             1px groove #e0e0e0;
+  box-shadow:         4px 4px 4px #d0d0d0;
+  width:              100%;
+  height:             18%;
+  cursor:             default;
+} .banner h1 {
+  position:           absolute;
+  left:               3%;
+  top:                16%;
+  font-size:          4.3vw;
+  padding:            0;
+  margin:             0;
+  color:              #aaa;
+  text-shadow:        4px 4px 4px #000;
+} .banner h2 {
+  position:           absolute;
+  left:               33.5vw;
+  top:                3vh;
+  font-size:          1.5vw;
+  color:              #aaa;
+  text-shadow:        2px 2px 2px #000;
+} .banner h3 {
+  position:           absolute;
+  left:               33.5vw;
+  top:                5vh;
+  font-size:          1.5vw;
+  color:              #aaa;
+  text-shadow:        2px 2px 2px #000;
+} .banner h4 {
+  position:           absolute;
+  left:               75vw;
+  top:                7vh;
+  font-size:          1.5vw;
+  color:              #ddd;
+  text-shadow:        2px 2px 2px #000;
+}
+
+/******************************************************************************/
+/* Navigation Bar Styling                                                     */
+/******************************************************************************/
+.navbar {
+  position:           absolute;
+  left:               0;
+  top:                15vh;
+  width:              100%;
+  height:             4vh;
+  font-size:          1.1vw;
+  line-height:        25px;
+  text-align:         center;
+  background-color:   #000;
+} .navbar a {
+  position:           absolute;
+  padding:            0;
+  margin:             0;
+  top:                .5vh;
+} .navbar a:hover {   color: #ddd;
+} .navbar .link1  {   left: 2%;
+} .navbar .link2  {   left: 8%;
+} .navbar .link3  {   left: 19%;
+} .navbar .link4  {   left: 32%;
+} .navbar .link5  {   left: 46%;
+} .navbar .link6  {   left: 58%;
+} .navbar .link7  {   left: 68%;
+} .navbar .link8  {   left: 76%;
+} .navbar .link9  {   left: 92%;  }
+
+/******************************************************************************/
+/* Footer Styling                                                             */
+/******************************************************************************/
+.footer {
+  position:     absolute;
+  cursor:       default;
+  left:         21.5%;
+  top:          96vh;
+  width:        59.836%;
+  font-size:    .8vw;
+  font-style:   italic;
+  text-align:   right;
+  color:        #ddd;
+}
+
+/******************************************************************************/
+/* Accordion Title Bar Styling                                                */
+/******************************************************************************/
+.accordion-title {
+  position:                       absolute;
+  left:                           20vw;
+  top:                            22vh;
+  font-size:                      1.5vw;
+  background-color:               black;
+  padding:                        0 0 0 8px;
+  color:                          red;
+  cursor:                         default;
+  width:                          59.8vw;
+} .accordion-title p {
+  position:                       absolute;
+  cursor:                         default;
+  font-size:                      .7vw;
+  padding:                        0;
+  margin:                         0;
+  top:                            28%;
+  left:                           80%;
+  color:                          white;
+} .accordion-title a {
+  position:                       absolute;
+  color:                          #ccc;
+  cursor:                         pointer;
+  font-size:                      .7vw;
+  top:                            28%;
+} .accordion-title a:hover {
+  color:                          #FFF;
+} .accordion-title .genreButton {
+  left:                           87%;
+  cursor:                         pointer;
+} .accordion-title .yearButton {
+  left:                           94%;
+  cursor:                         pointer;
+}
+
+/******************************************************************************/
+/* Year Filter Menu Styling                                                   */
+/******************************************************************************/
+.yearFilterMenu {
+  position:         absolute;
+  background-color: black;
+  visibility:       hidden;
+  width:            200px;
+  top:              25vh;
+  left:             69.4vw;
+  color:            white;
+}
+
+/******************************************************************************/
+/* Genre Filter Menu Styling                                                  */
+/******************************************************************************/
+.genreFilterMenu {
+  position:         absolute;
+  background-color: black;
+  visibility:       hidden;
+  width:            200px;
+  top:              25vh;
+  left:             69.4vw;
+  color:            white;
+}
+
+/******************************************************************************/
+/* Full Accordion Styling   (MAIN.HTML ONLY)                                  */
+/******************************************************************************/
+.accordion {
+  position:             absolute;
+  left:                 20vw;
+  top:                  25%;
+  width:                60vw;
+  border:               2px solid black;
+  max-height:           67vh;
+  overflow:             scroll;
+  overflow-x:           hidden;
+} .item-overall {
+  border:               1px solid black;
+  margin:               0px 0px 0px 0px;
+} .item-summary {
+  background-color:     #bbb;
+  font-size:            1vw;
+  cursor:               pointer;
+} .item-summary:hover {
+  background-color:     #888;
+} .item-details {
+  background-color:     #ddd;
+  cursor:               default;
+  width:                60vw;
+  height:               30vh;
+} .item-details h1 {
+  font-size:            1vw;
+  color:                #aaa;
+} .item-details h2 {
+  position:             absolute;
+  top:                  30vh;
+  margin-bottom:        0;
+  width:                10vw;
+  font-size:            1vw;
+  color:                #aaa;
+} .item-details p {
+  font-size:            1.3vw;
+  width:                25vw;
+} .item-details img {
+  padding:              10px;
+  padding-right:        4vw;
+  width:                9vw;
+}
+/******************************************************************************/
+/* Full Movie Data Styling   (000#.HTML ONLY)                                 */
+/******************************************************************************/
+.movie-data {
+  display:                  grid;
+  position:                 absolute;
+  left:                     20vw;
+  top:                      23vh;
+  width:                    60vw;
+  height:                   68vh;
+} .movie-data .leftData {
+  grid-row-start:           1;
+  grid-row-end:             2;
+  grid-column-start:        1;
+  grid-column-end:          2;
+  height:                   87.5vh;
+  width:                    50vw;
+} .movie-data .rightData {
+  grid-row-start:           1;
+  grid-row-end:             2;
+  grid-column-start:        2;
+  grid-column-end:          3;
+  height:                   87.5vh;
+  width:                    50vw;
+} .rightData .movieImg {
+  position:                 absolute;
+  top:                      0;
+  left:                     38vw;
+  width:                    20vw;
+} .leftData h5 {
+  font-size:                1.8vw;
+  padding:                  0;
+  width:                    80vw;
+  margin:                   0;
+  color:                    red;
+} .leftData h1 {
+  font-size:                1vw;
+  padding:                  0 0 0 3vw;
+  width:                    80vw;
+  margin:                   0;
+  color:                    #aaa;
+} .leftData p {
+  font-size:                1.4vw;
+  width:                    30vw;
+  color:                    #ddd;
+  padding-top:              10vh;
+  height:                   30vh;
+  margin:                   0;
+} .leftData h2 {
+  font-size:                1vw;
+  padding:                  2vh 0 0 0;
+  width:                    80vw;
+  margin:                   0;
+  color:                    #aaa;
+} .leftData h3 {
+  font-size:                1vw;
+  width:                    80vw;
+  padding:                  2.3vh 0 0 0;
+  margin:                   0;
+  color:                    #aaa;
+} .returnhome {
+  position:                 absolute;
+  font-size:                1vw;
+  width:                    10vw;
+  padding:                  0;
+  top:                      65vh;
+  left:                     0;
+  border:                   2px solid black;
+  text-align:               center;
+  background-color:         white;
+} .checkout {
+  position:                 absolute;
+  font-size:                1vw;
+  width:                    10vw;
+  top:                      65vh;
+  left:                     15vw;
+  padding:                  0;
+  border:                   2px solid black;
+  text-align:               center;
+  background-color:         white;
+}
+
+/******************************************************************************/
+/* Ad Space Styling                                                           */
+/******************************************************************************/
+.leftADSpace {
+  position:               absolute;
+  top:                    15%;
+  left:                   0;
+  width:                  18%;
+  height:                 90%;
+  background-color:       black;
+}.leftADSpace .leftAD {
+  position:               absolute;
+  background-image:       url("images/PUT_YOUR_AD_HERE-300x150.jpg");
+  background-size:        100%;
+  top:                    15%;
+  left:                   5%;
+  width:                  90%;
+  height:                 65%;
+} .rightADSpace {
+  position:               absolute;
+  top:                    15%;
+  left:                   82%;
+  width:                  18%;
+  height:                 90%;
+  background-color:       black;
+}.rightADSpace .rightAD {
+  position:               absolute;
+  background-image:       url("images/your-ad-here2.gif");
+  background-size:        100%;
+  top:                    15%;
+  left:                   5%;
+  width:                  90%;
+  height:                 65%;
+}
+
+/******************************************************************************/

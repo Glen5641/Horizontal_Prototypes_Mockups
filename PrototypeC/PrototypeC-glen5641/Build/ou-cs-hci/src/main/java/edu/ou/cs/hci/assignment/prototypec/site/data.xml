@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DATA>
+
+  <ITEM>
+    <ID>0001</ID>
+    <IMDB>tt0338013</IMDB>
+    <TITLE>Eternal Sunshine Of The Spotless Mind</TITLE>
+    <GENRE>Science Fiction</GENRE>
+    <DESCRIPTION>A couple undergo a procedure to erase each other from their memories when their relationship turns sour, but it is only through the process of loss that they discover what they had to begin with.</DESCRIPTION>
+    <YEAR>2004</YEAR>
+    <DURATION>1:47:47</DURATION>
+  </ITEM>
+
+  <ITEM>
+    <ID>0002</ID>
+    <IMDB>tt0241527</IMDB>
+    <TITLE>Harry Potter And The Sorcerer's Stone</TITLE>
+    <GENRE>Fantasy</GENRE>
+    <DESCRIPTION>Rescued from the outrageous neglect of his aunt and uncle, a young boy with a great destiny proves his worth while attending Hogwarts School of Witchcraft and Wizardry.</DESCRIPTION>
+    <YEAR>2001</YEAR>
+    <DURATION>2:32:21</DURATION>
+  </ITEM>
+
+  <ITEM>
+    <ID>0003</ID>
+    <IMDB>tt0446029</IMDB>
+    <TITLE>Scott Pilgrim Vs. The World</TITLE>
+    <GENRE>Fantasy</GENRE>
+    <DESCRIPTION>Scott Pilgrim must defeat his new girlfriend's seven evil exes in order to win her heart.</DESCRIPTION>
+    <YEAR>2010</YEAR>
+    <DURATION>1:52:23</DURATION>
+  </ITEM>
+
+  <ITEM>
+    <ID>0004</ID>
+    <IMDB>tt0379786</IMDB>
+    <TITLE>Serenity</TITLE>
+    <GENRE>Science Fiction</GENRE>
+    <DESCRIPTION>The crew of the ship Serenity tries to evade an assassin sent to recapture one of their number, who is telepathic.</DESCRIPTION>
+    <YEAR>2005</YEAR>
+    <DURATION>1:59:03</DURATION>
+  </ITEM>
+
+</DATA>
